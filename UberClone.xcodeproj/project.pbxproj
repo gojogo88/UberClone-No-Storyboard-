@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		6CBCDB11247F4B680045ED4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBCDB10247F4B680045ED4A /* AppDelegate.swift */; };
 		6CBCDB13247F4B680045ED4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBCDB12247F4B680045ED4A /* SceneDelegate.swift */; };
-		6CBCDB15247F4B680045ED4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBCDB14247F4B680045ED4A /* ViewController.swift */; };
-		6CBCDB18247F4B680045ED4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBCDB16247F4B680045ED4A /* Main.storyboard */; };
+		6CBCDB15247F4B680045ED4A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBCDB14247F4B680045ED4A /* LoginController.swift */; };
 		6CBCDB1A247F4B6B0045ED4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CBCDB19247F4B6B0045ED4A /* Assets.xcassets */; };
 		6CBCDB1D247F4B6B0045ED4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBCDB1B247F4B6B0045ED4A /* LaunchScreen.storyboard */; };
+		6CBCDB2B247F50640045ED4A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBCDB2A247F50640045ED4A /* UIView+Ext.swift */; };
+		6CBCDB2D247F6D4E0045ED4A /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBCDB2C247F6D4E0045ED4A /* UITextField+Ext.swift */; };
+		6CCFBFB52480B5D100ACE28B /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCFBFB42480B5D100ACE28B /* SignUpController.swift */; };
+		6CCFBFB72480C36600ACE28B /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCFBFB62480C36600ACE28B /* AuthButton.swift */; };
+		6CE06798247F8DC20041D4AF /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE06797247F8DC20041D4AF /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CBCDB0D247F4B680045ED4A /* UberClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBCDB10247F4B680045ED4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CBCDB12247F4B680045ED4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6CBCDB14247F4B680045ED4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6CBCDB17247F4B680045ED4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CBCDB14247F4B680045ED4A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		6CBCDB19247F4B6B0045ED4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CBCDB1C247F4B6B0045ED4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CBCDB1E247F4B6B0045ED4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CBCDB2A247F50640045ED4A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		6CBCDB2C247F6D4E0045ED4A /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		6CCFBFB42480B5D100ACE28B /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		6CCFBFB62480C36600ACE28B /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		6CE06797247F8DC20041D4AF /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		6CBCDB0F247F4B680045ED4A /* UberClone */ = {
 			isa = PBXGroup;
 			children = (
+				6CBCDB28247F4BD00045ED4A /* Model */,
+				6CBCDB27247F4BCD0045ED4A /* View */,
+				6CBCDB26247F4BCA0045ED4A /* Controller */,
+				6CBCDB25247F4BC70045ED4A /* Service */,
+				6CBCDB24247F4BC40045ED4A /* Utilities */,
 				6CBCDB10247F4B680045ED4A /* AppDelegate.swift */,
 				6CBCDB12247F4B680045ED4A /* SceneDelegate.swift */,
-				6CBCDB14247F4B680045ED4A /* ViewController.swift */,
-				6CBCDB16247F4B680045ED4A /* Main.storyboard */,
 				6CBCDB19247F4B6B0045ED4A /* Assets.xcassets */,
 				6CBCDB1B247F4B6B0045ED4A /* LaunchScreen.storyboard */,
 				6CBCDB1E247F4B6B0045ED4A /* Info.plist */,
 			);
 			path = UberClone;
+			sourceTree = "<group>";
+		};
+		6CBCDB24247F4BC40045ED4A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6CBCDB29247F50510045ED4A /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6CBCDB25247F4BC70045ED4A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6CBCDB26247F4BCA0045ED4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6CBCDB14247F4B680045ED4A /* LoginController.swift */,
+				6CCFBFB42480B5D100ACE28B /* SignUpController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6CBCDB27247F4BCD0045ED4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CCFBFB62480C36600ACE28B /* AuthButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6CBCDB28247F4BD00045ED4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CBCDB29247F50510045ED4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6CBCDB2A247F50640045ED4A /* UIView+Ext.swift */,
+				6CBCDB2C247F6D4E0045ED4A /* UITextField+Ext.swift */,
+				6CE06797247F8DC20041D4AF /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +187,6 @@
 			files = (
 				6CBCDB1D247F4B6B0045ED4A /* LaunchScreen.storyboard in Resources */,
 				6CBCDB1A247F4B6B0045ED4A /* Assets.xcassets in Resources */,
-				6CBCDB18247F4B680045ED4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CBCDB15247F4B680045ED4A /* ViewController.swift in Sources */,
+				6CBCDB2B247F50640045ED4A /* UIView+Ext.swift in Sources */,
+				6CCFBFB72480C36600ACE28B /* AuthButton.swift in Sources */,
+				6CBCDB2D247F6D4E0045ED4A /* UITextField+Ext.swift in Sources */,
+				6CCFBFB52480B5D100ACE28B /* SignUpController.swift in Sources */,
+				6CBCDB15247F4B680045ED4A /* LoginController.swift in Sources */,
+				6CE06798247F8DC20041D4AF /* UIColor+Ext.swift in Sources */,
 				6CBCDB11247F4B680045ED4A /* AppDelegate.swift in Sources */,
 				6CBCDB13247F4B680045ED4A /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +211,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6CBCDB16247F4B680045ED4A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CBCDB17247F4B680045ED4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6CBCDB1B247F4B6B0045ED4A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
