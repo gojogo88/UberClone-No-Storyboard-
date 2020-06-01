@@ -87,14 +87,14 @@ extension UIView {
     centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
   }
   
-  func centerY(inView view: UIView, trailingAnchor: NSLayoutXAxisAnchor? = nil,
+  func centerY(inView view: UIView, leadingAnchor: NSLayoutXAxisAnchor? = nil,
                paddingLeft: CGFloat = 0, constant: CGFloat = 0) {
       
     translatesAutoresizingMaskIntoConstraints = false
     centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: constant).isActive = true
       
-    if let trailing = trailingAnchor {
-      anchor(trailing: trailing, paddingLeft: paddingLeft)
+    if let leading = leadingAnchor {
+      anchor(leading: leading, paddingLeft: paddingLeft)
     }
   }
   
@@ -102,5 +102,13 @@ extension UIView {
     translatesAutoresizingMaskIntoConstraints = false
     heightAnchor.constraint(equalToConstant: height).isActive = true
     widthAnchor.constraint(equalToConstant: width).isActive = true
+  }
+  
+  
+  func addShadow() {
+    layer.shadowColor = UIColor.black.cgColor
+    layer.shadowOpacity = 0.55
+    layer.shadowOffset = CGSize(width: 0.5, height: 0.5)
+    layer.masksToBounds = false
   }
 }
